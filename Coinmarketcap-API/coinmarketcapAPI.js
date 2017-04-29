@@ -14,7 +14,7 @@ callback = function(response) {
   response.on('data', function (chunk) {
     str += chunk;
   });
-
+//gggg
   //the whole response has been recieved, so we just print it out here
   response.on('end', function () {
     console.log(str);
