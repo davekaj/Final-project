@@ -1,7 +1,11 @@
+
+
 const express = require('express');
 const app = express();
 const axios = require("axios")
 const bodyParser = require('body-parser');
+const path = require('path');
+const PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -11,8 +15,15 @@ app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
-app.listen(8080, () => {
-    console.log('Server Started on http://localhost:8080');
+
+app.use(express.static(__dirname + './../build'));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve((__dirname + './../build/index.html')));
+});
+
+app.listen(PORT, () => {
+    console.log('Server Started on ' + PORT);
     console.log('Press CTRL + C to stop server');
 });
 //*********************************BACKEND STARTS. BELOW IS API CALL********************************************** */

@@ -6,10 +6,10 @@ import './index.css';
 import { Login, Register, Home } from './login'
 import Calculator from './calculator'
 import About from './About';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 
 ReactDOM.render(
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
         <Route path="/" component={LoginApp}>
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
