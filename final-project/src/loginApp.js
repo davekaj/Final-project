@@ -24,13 +24,13 @@ class LoginApp extends Component {
                 </div>
                     <footer className="footer">
                         <div className="container">
-                            <div className = "col-xs-6">
+                            <div className="col-xs-6">
                                 <a href="https://github.com/davekaj" target="_blank"><i className="fa fa-github"></i></a>
                                 <a href="https://twitter.com/davidkajpust" target="_blank"><i className="fa fa-twitter"></i></a>
                                 <a href="https://ca.linkedin.com/in/davidkajpust" target="_blank"><i className="fa fa-linkedin"></i></a>
                                 <a href="https://www.facebook.com/david.kajpust" target="_blank"><i className="fa fa-facebook"></i></a>
                             </div>
-                            <div className = "col-xs-6 text-right">
+                            <div className="col-xs-6 text-right">
                                 <span>DESIGNED BY DAVID KAJPUST © 2017</span>
                             </div>
                         </div>

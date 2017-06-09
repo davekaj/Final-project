@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
         amount: Number,
         price: Number,
         originalPrice: Number,
-        id: Number
+        symbol: String,
     }]
 })
 
